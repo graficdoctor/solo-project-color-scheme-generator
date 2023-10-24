@@ -27,8 +27,8 @@ This is a solution to the [Solo Project: Color Scheme Generator](https://scrimba
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/graficdoctor/soloproject-my-learning-journal)
-- Live Site URL: [Netlify](https://verdant-scone-0c4857.netlify.app/)
+- Solution URL: [GitHub](https://github.com/graficdoctor/solo-project-color-scheme-generator)
+- Live Site URL: [Vercel](https://solo-project-color-scheme-generator.vercel.app/)
 
 ## My process
 
