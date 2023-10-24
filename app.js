@@ -4,7 +4,7 @@ const colorScheme = document.getElementById('color-scheme');
 const colorSeed = document.getElementById('seed-color').value;
 const buttonEl = document.querySelector('.btn');
 
-colorSeedHex = colorSeed.replace('#', '');
+const colorSeedHex = colorSeed.replace('#', '');
 
 const getColorScheme = () => {
 	const colorApi = `https://www.thecolorapi.com/scheme?hex=${colorSeedHex}&mode=${colorScheme.value}`;
