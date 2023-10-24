@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+}
+
+:root {
+	--clr-neutral-900: #fff;
+	--clr-neutral-800: #fffdfe;
+	--clr-neutral-700: #d1d5db;
+	--clr-neutral-100: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--clr-neutral-900: #1c1c1c;
+		--clr-neutral-800: #1f2937;
+		--clr-neutral-700: #3d4b60;
+		--clr-neutral-100: #d5d4d8;
+	}
+}
+
+html {
+	background-color: #1c1c1c;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	color: var(--clr-neutral-100);
+	font-family: 'Inter', sans-serif;
+	font-size: 0.75rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.color-selection {
+	width: calc(110px * 5);
+	background-color: var(--clr-neutral-800);
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 0.8rem;
+	padding: 1.5rem 1rem;
+}
+
+input#seed-color {
+	height: 41px;
+	border: 2px solid var(--clr-neutral-700);
+	border-radius: 4px;
+}
+
+select#color-scheme {
+	font-size: 1rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	border: 1px solid var(--clr-neutral-700);
+	text-transform: capitalize;
+
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="%232c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>')
+		no-repeat;
+	background-color: var(--clr-neutral-700);
+	color: var(--clr-neutral-100);
+	background-position: calc(100% - 0.75rem) center !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	padding-right: 2rem !important;
+}
+
+.color-bars,
+.color-codes {
+	display: flex;
+	align-items: start;
+}
+
+.color-codes {
+	background-color: var(--clr-neutral-800);
+}
+
+.color-bar {
+	width: 110px;
+	height: 500px;
+}
+
+.color-bar:nth-of-type(1) {
+	background-color: #f55a5a;
+}
+.color-bar:nth-of-type(2) {
+	background-color: #2b283a;
+}
+.color-bar:nth-of-type(3) {
+	background-color: #fbf3ab;
+}
+.color-bar:nth-of-type(4) {
+	background-color: #aad1b6;
+}
+.color-bar:nth-of-type(5) {
+	background-color: #a626d3;
+}
+
+.color-code {
+	width: 110px;
+	text-align: center;
+	padding-block: 0.688rem;
+	text-transform: uppercase;
+}
+
+.btn {
+	cursor: pointer;
+	background-color: var(--clr-neutral-700);
+	border: 1px solid var(--clr-neutral-700);
+	color: var(--clr-neutral-100);
+	font-size: 0.75rem;
+	padding: 0.75rem 0.688rem;
+	border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

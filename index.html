@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Color Scheme Generator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<section class="container">
+			<div class="color-selection">
+				<input type="color" name="seed-color" id="seed-color" />
+				<select name="color-scheme" id="color-scheme">
+					<option value="monochrome">monochrome</option>
+					<option value="monochrome-dark">monochrome-dark</option>
+					<option value="monochrome-light">monochrome-light</option>
+					<option value="analogic">analogic</option>
+					<option value="complement">complement</option>
+					<option value="analogic-complement">analogic-complement</option>
+					<option value="triad">triad</option>
+				</select>
+				<button class="btn" type="button">Get color scheme</button>
+			</div>
+			<ul class="color-bars">
+				<li class="color-bar"></li>
+				<li class="color-bar"></li>
+				<li class="color-bar"></li>
+				<li class="color-bar"></li>
+				<li class="color-bar"></li>
+			</ul>
+			<ul class="color-codes">
+				<li class="color-code">#f55a5a</li>
+				<li class="color-code">#2b283a</li>
+				<li class="color-code">#fbf3ab</li>
+				<li class="color-code">#aad1b6</li>
+				<li class="color-code">#a626d3</li>
+			</ul>
+		</section>
+	</body>
+</html>
