@@ -9,6 +9,7 @@ This is a solution to the [Solo Project: Color Scheme Generator](https://scrimba
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Fixed error](#fixed-error)
 - [Author](#author)
 
 ## Overview
@@ -31,11 +32,7 @@ This is a solution to the [Solo Project: Color Scheme Generator](https://scrimba
 - Live Site URL: [Vercel](https://solo-project-color-scheme-generator.vercel.app/)
 - Code Review on [Scrimba](https://scrimba.com/scrim/co315440ab5fa6aedb5874ee1)
 
-## Updated Mistake
-
-- After having uploaded the code and shared it on Scrimba, I was pointed out an error. I had already declared the `colorSeed`-variable with its value. This caused the app to always have black as a starting color and base its functioning in this value.
-- The code I changed is: `const colorSeed = document.getElementById('seed-color');`
-- I also moved the `colorHex`-variable down into the function and have the `.value` added here: `const colorSeedHex = colorSeed.value.replace('#', '');`. This way the value isn't loaded when the app is loaded, but when the users clicks on the color-input-field.
+## My Process
 
 ### Built with
 
@@ -43,6 +40,12 @@ This is a solution to the [Solo Project: Color Scheme Generator](https://scrimba
 - CSS custom properties
 - Flexbox
 - CSS Grid
+
+### Fixed Error
+
+- After having uploaded the code and shared it on Scrimba, I was pointed out an error. I had already declared the `colorSeed`-variable with its value. This caused the app to always have black as a starting color and base its functioning in this value.
+- The code I changed is: `const colorSeed = document.getElementById('seed-color');`
+- I also moved the `colorHex`-variable down into the function and have the `.value` added here: `const colorSeedHex = colorSeed.value.replace('#', '');`. This way the value isn't loaded when the app is loaded, but when the users clicks on the color-input-field.
 
 ## Author
 
