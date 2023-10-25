@@ -1,12 +1,11 @@
 const colorBars = document.querySelectorAll('.color-bar');
 const colorCodes = document.querySelectorAll('.color-code');
 const colorScheme = document.getElementById('color-scheme');
-const colorSeed = document.getElementById('seed-color').value;
+const colorSeed = document.getElementById('seed-color');
 const buttonEl = document.querySelector('.btn');
 
-const colorSeedHex = colorSeed.replace('#', '');
-
 const getColorScheme = () => {
+	const colorSeedHex = colorSeed.value.replace('#', '');
 	const colorApi = `https://www.thecolorapi.com/scheme?hex=${colorSeedHex}&mode=${colorScheme.value}`;
 
 	fetch(colorApi)
